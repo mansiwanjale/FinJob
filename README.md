@@ -26,12 +26,6 @@ Follow these steps to get the project running on your local machine in 2 minutes
 
    Copy and paste this into your root README.md file:
 
-Markdown
-# 🚀 TalentSync: Full-Stack Job Portal
-
-This repository contains a containerized Job Portal built with the MERN-lite stack (React, Node.js, Express, MongoDB). This project follows the **DevOps lifecycle** including CI/CD and Containerization.
-
----
 
 ## 💻 How to Run Locally (Development Mode)
 If you want to code and see changes instantly without waiting for Docker:
@@ -59,7 +53,7 @@ App URL: http://localhost:3000
 API URL: http://localhost:5000
 
 
-Contribution rules
+#Contribution rules
 1. The "Main" is Sacred
 Never push code directly to the main branch.
 
