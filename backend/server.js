@@ -3,6 +3,9 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 require('dotenv').config();
 
+// Import routes
+const jobRoutes = require('./routes/jobs');
+
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -11,6 +14,9 @@ app.use(express.json());
 app.get('/health', (req, res) => {
     res.status(200).json({ status: 'UP', message: 'Job Portal Server is running' });
 });
+
+// Use job routes
+app.use('/api/jobs', jobRoutes);
 
 const PORT = process.env.PORT || 5000;
 
